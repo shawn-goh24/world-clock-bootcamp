@@ -12,11 +12,13 @@ export default class WorldClock extends React.Component {
   }
 
   render() {
+    let {clockData} = this.props;
+
     return(
       <div>
-        <Clock timeZone="America/Los_Angeles"/>
-        <Clock timeZone="Europe/London"/>
-        <Clock timeZone="Asia/Singapore"/>
+        {clockData.map((data) =>
+          <Clock timeZone={data.toString()}/>
+        )}
       </div>
     )
   }
