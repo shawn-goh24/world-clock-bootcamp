@@ -22,7 +22,7 @@ export default class WorldClock extends React.Component {
     return(
       <div>
         {clockData.map((data) =>
-          <Clock timeZone={data.toString()}/>
+          <Clock key={data.toString()} timeZone={data.toString()}/>
         )}
       </div>
     )
