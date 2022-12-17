@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/shawn-goh24/world-clock-bootcamp/static/css/main.d0753a41.css",
+    "main.js": "/shawn-goh24/world-clock-bootcamp/static/js/main.aa0ef406.js",
+    "static/media/logo.png": "/shawn-goh24/world-clock-bootcamp/static/media/logo.e54ce6ab620f8c7135f3.png",
+    "index.html": "/shawn-goh24/world-clock-bootcamp/index.html",
+    "main.d0753a41.css.map": "/shawn-goh24/world-clock-bootcamp/static/css/main.d0753a41.css.map",
+    "main.aa0ef406.js.map": "/shawn-goh24/world-clock-bootcamp/static/js/main.aa0ef406.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0753a41.css",
+    "static/js/main.aa0ef406.js"
+  ]
+}
