@@ -27,25 +27,37 @@ class App extends React.Component {
 
 
   render() {
+    const timeZoneList = [
+      "America/Los_Angeles",
+      "Europe/London",
+      "Asia/Singapore",
+      "Africa/Lagos",
+      "Asia/Tokyo",
+      "Asia/Seoul"
+    ];
+
     // const clockData = [
-    //   "America/Los_Angeles",
-    //   "Europe/London",
-    //   "Asia/Singapore",
-    //   "Africa/Lagos"
-    // ]
+      //   "America/Los_Angeles",
+      //   "Europe/London",
+      //   "Asia/Singapore",
+      //   "Africa/Lagos"
+      // ]
+
     const clickDemo = (e) => {
       this.addTimeZone(e.target.innerText)
     }
+    
+    const options = timeZoneList.map((option) => 
+      <option onClick={clickDemo} key={option.toString}>{option}</option>
+    )
+
 
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <select multiple>
-            <option onClick={clickDemo} key="America/Los_Angeles">America/Los_Angeles</option>
-            <option onClick={clickDemo} key="Europe/London">Europe/London</option>
-            <option onClick={clickDemo} key="Asia/Singapore">Asia/Singapore</option>
-            <option onClick={clickDemo} key="Africa/Lagos">Africa/Lagos</option>
+            {options}
           </select>
           <WorldClock clockData={this.state.timeZone}/>
         </header>
