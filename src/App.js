@@ -36,13 +36,6 @@ class App extends React.Component {
       "Asia/Seoul"
     ];
 
-    // const clockData = [
-      //   "America/Los_Angeles",
-      //   "Europe/London",
-      //   "Asia/Singapore",
-      //   "Africa/Lagos"
-      // ]
-
     const clickDemo = (e) => {
       this.addTimeZone(e.target.innerText)
     }
